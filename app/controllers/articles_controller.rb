@@ -16,4 +16,11 @@ class ArticlesController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def article_params
+    
+  end
+
 end
