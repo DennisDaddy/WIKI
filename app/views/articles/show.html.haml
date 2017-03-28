@@ -1,6 +1,11 @@
 %h1= @article.title
 
 %p= @article.content
+%p
+  %b Category:
+ 
+  = link_to @article.category.name, category_path(:id => @article.category.id) 
+
 
 .btn-group
   = link_to "Back", root_path, class: "btn btn-default"
