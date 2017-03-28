@@ -3,6 +3,8 @@
 %p= @article.content
 
 = link_to "Back", root_path
+= link_to "Edit", edit_article_path(@article)
+
 
 = link_to "New Article", new_article_path
 
