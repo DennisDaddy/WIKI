@@ -26,7 +26,7 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     @title = @category.name
-    @posts = @category.posts
+    @articles = @category.articles
   end
 
   def edit
