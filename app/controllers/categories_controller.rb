@@ -1,10 +1,12 @@
 class CategoriesController < ApplicationController
+ 
+
   def index
+
     @categories = Category.all
   end
 
-  def edit
-  end
+  
 
   def new
     @category = Category.new
@@ -60,7 +62,9 @@ class CategoriesController < ApplicationController
 
   private
 
+  
+
   def category_params
-    params.require(:category).permit(:name)
+    params.require(:category).permit(:name, :category_id)
   end
 end
